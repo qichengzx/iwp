@@ -11,16 +11,16 @@
 	<div class="widget readers">
 		<h4><span>活跃读者</span></h4>
 		<dl class="clearfix">
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
+			<!-- <dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
 			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
 			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
 			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
+			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
+			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
+			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
+			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
+			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
+			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd> -->
 		
 			<?php
 			// Most active commenter

@@ -15,4 +15,3 @@ Template Name: 热门标签
 	<?php get_sidebar(); ?>
 </section>
 <? get_footer(); ?>
-	
