@@ -28,45 +28,6 @@ if ( post_password_required() )
 </div>
 <!--评论列表-->
 <div class="comments-list comments-area" id="comments">
-	<!-- <ul class="clearfix">
-		<li>
-			<img src="assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar">
-			<div>
-				<h4>于江水&nbsp;&nbsp;2013-11-13 10:55&nbsp;&nbsp;<a href="javascript:void(0)" data-reto="" rel="nofollow">回复</a></h4>
-				<p>这写的什么乱七八糟的，看不懂</p>
-			</div>
-		</li>
-		<li class="has-reply">
-			<img src="assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar">
-			<div>
-				<h4>于江水&nbsp;&nbsp;2013-11-13 10:55&nbsp;&nbsp;<a href="javascript:void(0)" data-reto="" rel="nofollow">回复</a></h4>
-				<p>这写的什么乱七八糟的，看不懂</p>
-			</div>
-			<ul class="clearfix">
-				<li>
-					<img src="assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar">
-					<div>
-						<h4>于江水&nbsp;&nbsp;2013-11-13 10:55&nbsp;&nbsp;<a href="javascript:void(0)" data-reto="" rel="nofollow">回复</a></h4>
-						<p>这写的什么乱七八糟的，看不懂</p>
-					</div>
-				</li>
-				<li>
-					<img src="assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar">
-					<div>
-						<h4>于江水&nbsp;&nbsp;2013-11-13 10:55&nbsp;&nbsp;<a href="javascript:void(0)" data-reto="" rel="nofollow">回复</a></h4>
-						<p>这写的什么乱七八糟的，看不懂</p>
-					</div>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<img src="assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar">
-			<div>
-				<h4>于江水&nbsp;&nbsp;2013-11-13 10:55&nbsp;&nbsp;<a href="javascript:void(0)" data-reto="" rel="nofollow">回复</a></h4>
-				<p>这写的什么乱七八糟的，看不懂</p>
-			</div>
-		</li>
-	</ul> -->
 	<?php if ( have_comments() ) : ?>
 		<h3 class="comments-title">本文评论(<?php printf(get_comments_number());?>)</h3>
 		<ul class="comment-list clearfix">
@@ -76,9 +37,9 @@ if ( post_password_required() )
 					'short_ping'  => true,
 					'avatar_size' => 36,
 				) );
+
 			?>
 		</ul><!-- .comment-list -->
-
 		<?php
 			// Are there comments to navigate through?
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :

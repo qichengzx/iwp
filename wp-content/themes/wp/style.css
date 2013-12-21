@@ -141,6 +141,7 @@ article .thumb img{max-width: 220px;max-height: 150px;}
 .carousel-inner>div{max-width: 830px;height: 250px; overflow: hidden;}
 .carousel-inner img{width: 830px;height: 250px;}
 .entry-title a span{font-size: 12px;padding: 0 10px;}
+.Archives-nav span{color:#428BD1}
 /**********************
 //                   //
 //   widget边栏      //
@@ -154,7 +155,8 @@ article .thumb img{max-width: 220px;max-height: 150px;}
 #aside .tab-content{border: 1px solid #dddddd; border-top: none;}
 .entry-list dd,.hot dd{height: 24px;line-height: 24px;}
 .readers dd,
-.comments .avatar{width: 36px;height: 36px;float: left;overflow: hidden;margin: 0 4px 4px 0;}
+.comments .avatar,
+.comment-list .avatar{width: 36px;height: 36px;float: left;overflow: hidden;margin: 0 4px 4px 0;}
 #aside .readers dl,
 #aside .tags dl{padding:10px 15px 6px 15px}
 #aside .readers dt,
@@ -167,7 +169,7 @@ img.avatar-36{width: 36px;height: 36px;}
 //     page-footer   //
 //                   //
 **********************/
-#page-footer{min-height: 100px;background-color: #4A4A4A;color: #EEEEEE;padding: 15px 0}
+#page-footer{min-height: 100px;background-color: #4A4A4A;color: #EEEEEE;padding: 15px 0;line-height: 1.9em;}
 #page-footer a{color: #EEEEEE}
 #page-footer a:hover{color: #D54E21}
 #page-footer>div{max-width: 1200px;margin:0 auto;}
@@ -182,6 +184,77 @@ img.avatar-36{width: 36px;height: 36px;}
 #aside .comments dd{padding-bottom: 3px;font-size: 12px;}
 .comments dd:hover{border-bottom:1px solid #CCCCCC}
 .comments .comment{padding-left: 40px;}
+
+.comment-body{position: relative;}
+/*.comment-body .reply{position: absolute;top: 18px;left: 138px;}*/
+.comment-meta,
+.comment-author,
+.comment-body .reply{font-size: 12px;line-height: 1.7em;}
+.comment-body p{padding-left: 46px;}
+.form-allowed-tags{margin-bottom: 5px;}
+#submit{
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background-color: #eeeeee;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: -o-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: linear-gradient(top, #fbfbfb, #e1e1e1);
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border: 1px solid #d4d4d4;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 25.6px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #666666;
+  text-shadow: 0 1px 1px white;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+	-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #00a1cb;
+  color: white;
+  text-shadow: none;
+  border: none;
+  height: 34px;
+  cursor: pointer;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -ms-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -khtml-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: glowing;
+  -khtml-animation-name: glowing;
+  -moz-animation-name: glowing;
+  -ms-animation-name: glowing;
+  -o-animation-name: glowing;
+  animation-name: glowing;
+}
 /**********************
 //                   //
 //        详情页     //

@@ -14,7 +14,7 @@
 			<!--详情头部-->
 			<header class="a-header">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); if(is_sticky()){echo "<span>置顶</span>";}?></a></h2>
-				<div class="info"><?php entry_author(); ?><?php entry_date(); ?><span>200次浏览</span><span><a href="<?php the_permalink(); ?>#comments"><?php comments_number('0', '1', '%' );?>条评论</a></span><span>所属分类：<?php entry_cate(); ?></span></div>
+				<div class="info"><?php entry_author(); ?><?php entry_date(); ?><!-- <span>200次浏览</span> --><span><a href="<?php the_permalink(); ?>#comments"><?php comments_number('0', '1', '%' );?>条评论</a></span><span><?php entry_cate(); ?></span></div>
 			</header>
 			<!--详情内容-->
 			<article class="a-article">
