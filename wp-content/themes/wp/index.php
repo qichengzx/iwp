@@ -54,6 +54,7 @@
 			<?php wp_reset_query();if(have_posts()) : ?>
 				<h2>最新文章</h2>
 				<?php while ( have_posts() ) : the_post(); ?>
+				<?php echo get_post_format();?>
 				<?php get_template_part( 'loop', get_post_format() ); ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
@@ -62,4 +63,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 </section>
-<? get_footer(); ?>
+<?php get_footer(); ?>

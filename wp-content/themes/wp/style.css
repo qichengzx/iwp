@@ -97,7 +97,8 @@ a:hover{color:#D54E21;text-decoration:none;}
 ::selection{background:#333333;color:#fff;text-shadow:none;text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);}
 ::-moz-selection{background:#333333;color:#fff;text-shadow:none;text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);}
 .header{height: 50px;line-height: 50px;background-color: #4A4A4A;position: fixed;top: 0;left: 0;width: 100%;z-index: 5;}
-#logo{display: inline-block;margin: 0;width: 100px;text-align: center;height: 50px;}
+#logo{display: inline-block;margin: 0;height: 50px;}
+#logo img{max-height: 50px;}
 #head-nav .nav-menu{float: left;}
 #head-nav li{display:block;float: left;height: 50px;line-height: 50px}
 #head-nav a{ display: block;padding: 0 20px; color: #EEE;font-weight: 600;float: left;}
@@ -169,8 +170,9 @@ img.avatar-36{width: 36px;height: 36px;}
 //     page-footer   //
 //                   //
 **********************/
-#page-footer{min-height: 100px;background-color: #4A4A4A;color: #EEEEEE;padding: 15px 0;line-height: 1.9em;}
-#page-footer a{color: #EEEEEE}
+#page-footer h2{font-size: 14px;}
+#page-footer{min-height: 100px;background-color: #4A4A4A;color: #AAAAAA;padding: 15px 0;line-height: 1.9em;}
+#page-footer a{color: #AAAAAA}
 #page-footer a:hover{color: #D54E21}
 #page-footer>div{max-width: 1200px;margin:0 auto;}
 

@@ -1,27 +1,11 @@
 <aside id="aside">
 	<?php include (TEMPLATEPATH . '/widget/tab.php'); ?>
-
-	<!--广告位-->
-	<!-- <div class="widget recommend">
-
-	</div> -->
-	
-
+	<?php if(get_option("z_hotreader")=="显示"){?>
 	<!--活跃读者-->
+
 	<div class="widget readers">
 		<h4><span>活跃读者</span></h4>
 		<dl class="clearfix">
-			<!-- <dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/e05ca614504b018303c130ce72abf10d.png" class="avatar-36"></a></dd>
-			<dd><a href="" data-toggle="tooltip" title="first tooltip"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/avatar.png" class="avatar-36"></a></dd> -->
-		
 			<?php
 			// Most active commenter
 			global $wpdb;
@@ -46,6 +30,7 @@
 			?>
 		</dl>
 	</div>
+	<?php }?>
 	<!--标签云-->
 	<div class="widget tags">
 		<h4><span>标签云</span></h4>
@@ -121,7 +106,7 @@
 	<div class="widget qrcode">
 		<h4><span>微信</span></h4>
 		<dl>
-			<dd><img src="<?php echo get_option('z_qrcode');?>"></dd>
+			<dd><img src="<?php bloginfo('stylesheet_directory'); ?>/<?php echo get_option('z_qrcode');?>"></dd>
 		</dl>
 	</div>
 	<?php }?>

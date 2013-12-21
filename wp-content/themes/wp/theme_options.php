@@ -14,7 +14,16 @@ array( "name" => $themename." Options",
 
 //首页布局设置开始
 
-//CMS布局首页设置
+    array( "type" => "close"),
+    array( "name" => "Logo",
+           "type" => "section"),
+    array( "type" => "open"),
+
+    array(  "name" => "是否显示logo",
+            "desc" => "在导航栏显示logo,不填为显示网站标题，上传至本主题目录即可",
+            "id" => $shortname."_logo",
+            "type" => "text",
+            "std" => ""),
 
     array( "type" => "close"),
     array( "name" => "是否显示微信",
@@ -22,7 +31,7 @@ array( "name" => $themename." Options",
     array( "type" => "open"),
 
     array(  "name" => "是否显示微信",
-            "desc" => "微信",
+            "desc" => "上传至本主题目录即可",
             "id" => $shortname."_qrcode",
             "type" => "text",
             "std" => "qrcode.jpg"),
@@ -49,6 +58,16 @@ array( "name" => $themename." Options",
     array(  "name" => "是否显示年度排行",
             "desc" => "",
             "id" => $shortname."_hotlist",
+            "type" => "select",
+            "std" => "显示",
+            "options" => array("显示", "关闭")),
+
+    array( "type" => "close"),
+    array( "name" => "活跃读者",
+           "type" => "section"),
+     array(  "name" => "是否显示活跃读者",
+            "desc" => "",
+            "id" => $shortname."_hotreader",
             "type" => "select",
             "std" => "显示",
             "options" => array("显示", "关闭")),
@@ -165,7 +184,7 @@ if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><stron
 ?>
 <div class="wrap rm_wrap">
 <h2><?php echo $themename; ?> 主题设置</h2>
-<p>当前使用主题: HotNewspro 2.7.1 Plus版 | 设计者:<a href="http://zmingcx.com" target="_blank"> 知更鸟</a> <font style="font-size:20px;"color=#ff0000><strong> &hearts; </strong></font> <font color=#000>捐助我，支付宝：<font color=#21759b><strong>zmingcx@gmail.com</strong></font></font> | <a href="http://zmingcx.com/hotnews-pro-theme-27.html" target="_blank">查看主题更新</a></p>
+<p>当前使用主题: 启程 | 设计者:<a href="http://qichengzx.com" target="_blank">启程</a> <font style="font-size:20px;"color=#ff0000><strong> &hearts; </strong></font> <font color="#000">捐助我，支付宝：<font color=#21759b><strong>qichengzx@hotmail.com</strong></font></font></p>
 <div class="rm_opts">
 <form method="post">
 <?php foreach ($options as $value) {

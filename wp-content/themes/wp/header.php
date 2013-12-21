@@ -24,9 +24,17 @@
 <body>
 <header class="header" id="header">
 	<div class="clearfix">
-	<h1 id="logo" class="pull-left" rel="home"><?php bloginfo( 'name' ); ?></h1>
+	
+	<h1 id="logo" class="pull-left" rel="home">
+		<?php if(get_option("z_logo")){?>
+			<img src="<?php echo bloginfo('stylesheet_directory').'/'.get_option('z_logo') ?>" height="50"/>
+		<?php }else{?>
+		<?php bloginfo( 'name' ); ?>
+		<?php } ?>
+	</h1>
+	
 	<nav id="head-nav" class="pull-left" role="navigation">
-		<a href="<?php echo bloginfo('url'); ?>" title="首页">首页</a>
+		<!-- <a href="<?php echo bloginfo('url'); ?>" title="首页">首页</a> -->
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu','container'=>'ul','container_id'=>'container1', 'menu_class' => 'nav-menu clearfix') ); ?>
 	</nav>
 	<div class="head-tool">
