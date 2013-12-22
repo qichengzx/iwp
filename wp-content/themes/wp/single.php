@@ -1,10 +1,5 @@
-<? get_header(); ?>
+<?php get_header(); ?>
 <nav id="breadcrumb">
-	<!-- <ol class="breadcrumb clearfix nobdr">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Library</a></li>
-		<li class="active">Data</li>
-	</ol> -->
 	<?php seobreadcrumbs();?>
 </nav>
 <section>
@@ -25,11 +20,24 @@
 				<div class="a-cate">
 					<span>所属分类：<?php entry_cate(); ?></span>
 				</div>
+				<?php if(the_tags()){?>
 				<div>
 					<?php the_tags('<span>标签: ', ', ', '</span>'); ?>
 				</div>
-				<div class="a-share">
-					<span>赶快分享：<a href="">XXX</a></span>
+				<?php }?>
+				<div class="a-share clearfix">
+					<span class="pull-left">赶快分享：</span>
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_more" data-cmd="more"></a>
+						<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+						<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+						<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+						<a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
+						<a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a>
+						<a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+						<a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a>
+					</div>
+
 				</div>
 				<div class="a-nav clearfix">
 					<div><?php previous_post_link('上一篇 &gt;：%link') ?></div>
@@ -38,7 +46,6 @@
 				<div class="a-relates">
 					<h3>与本文相关的文章</h3>
 					<ul>
-						
 					<?php
 						$post_num = 10; 
 						global $post;
@@ -81,4 +88,5 @@
 	</div>
 	<?php get_sidebar(); ?>
 </section>
-<? get_footer(); ?>
+<?php get_footer(); ?>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","sqq","weixin","copy"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>

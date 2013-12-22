@@ -7,9 +7,9 @@
 		<?php } ?>
 		<div class="footer_bottom">
 			<p>Copyright <?php echo comicpress_copyright(); ?> <?php bloginfo('name'); ?>&nbsp;&nbsp;保留所有权利.
-			&nbsp;&nbsp;Theme by <a target="_blank" href="http://qichengzx.com">启程</a>
+			&nbsp;&nbsp;Theme by <a target="_blank" href="http://www.qicheng.me">启程</a>
 			<?php echo stripslashes(get_option('swt_track_code')); ?>
-			Proudly powered by WordPress</p>
+			Proudly powered by <a target="_blank" href="http://wordpress.org">WordPress</a></p>
 			<p>代码如诗</p>
 		</div>
 	</div>

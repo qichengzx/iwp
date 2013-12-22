@@ -34,11 +34,9 @@
 	<!--标签云-->
 	<div class="widget tags">
 		<h4><span>标签云</span></h4>
-		<dl class="clearfix">
-			<dd>
-				<?php wp_tag_cloud(); ?>
-			</dd>
-		</dl>
+		<div>
+			<?php wp_tag_cloud('smallest=13&largest=13&unit=px&number=50&format=flat&orderby=count'); ?>
+		</div>
 	</div>
 	<!--年度排行-->
 	<?php if(get_option("z_hotlist")=="显示"){?>
