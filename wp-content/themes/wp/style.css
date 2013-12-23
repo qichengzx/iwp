@@ -162,6 +162,7 @@ article .thumb img{max-width: 220px;max-height: 150px;}
 .comment-list .avatar{width: 36px;height: 36px;float: left;overflow: hidden;margin: 0 4px 4px 0;}
 #aside .readers dl,
 #aside .tags div{background-color: #FFFFFF;padding: 6px 15px;line-height: 24px;}
+#aside .readers dl{padding-bottom: 2px}
 #aside .readers dt,
 #aside .readers dd{padding: 0}
 img.avatar-36{width: 36px;height: 36px;}

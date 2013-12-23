@@ -7,26 +7,19 @@
 		<h4><span>活跃读者</span></h4>
 		<dl class="clearfix">
 			<?php
-			// Most active commenter
-			global $wpdb;
-			$sql = "SELECT comment_author, comment_author_url, comment_author_email, count(comment_ID) as comment_count FROM $wpdb->comments WHERE comment_approved = '1' AND comment_type not in ('trackback','pingback')";
-			$sql .= " GROUP BY comment_author, comment_author_url, comment_author_email ORDER BY comment_count DESC LIMIT $max";
-			$results = $wpdb->get_results($sql);
-			$template = '<div class="who"><a href="%au">%g %an</a> (%c 条评论)</div>';
-			$echoed=0;
-			foreach ($results as $row) {
-			$tags = array('%g','%au','%an','%c');
-			$replacements = array(
-				get_avatar($row->comment_author_email,'32'),
-				$row->comment_author_url,
-				$row->comment_author,
-				$row->comment_count
-			);
-			echo '<dd>' . str_replace($tags,$replacements,$template) . '</dd>';
-			$echoed=1;
-			}
-			if ($echoed==0)
-			echo '<dd>找不到.</dd>';
+				$query="SELECT COUNT(comment_ID) AS cnt, comment_author, comment_author_url, comment_author_email FROM (SELECT * FROM $wpdb->comments LEFT OUTER JOIN $wpdb->posts ON ($wpdb->posts.ID=$wpdb->comments.comment_post_ID) WHERE comment_date > date_sub( NOW(), INTERVAL 12 MONTH ) AND user_id='0' AND comment_author_email != '' AND post_password='' AND comment_approved='1' AND comment_type='') AS tempcmt GROUP BY comment_author_email ORDER BY cnt DESC LIMIT 10";
+				$wall = $wpdb->get_results($query);
+				foreach ($wall as $comment)
+				{
+					if( $comment->comment_author_url )
+					$url = $comment->comment_author_url;
+					else $url="#";
+					$r="rel='external nofollow'";
+					$imgsize="32";
+					$tmp = "<dd><a target='_blank' href='".$url."' title='".$comment->comment_author." (留下".$comment->cnt."个脚印)'><img width='".$imgsize ."' height='".$imgsize ."' src='http://www.gravatar.com/avatar.php?gravatar_id=".md5( strtolower($comment->comment_author_email) )."&size=".$imgsize ."&d=identicon&r=G' alt='".$comment->comment_author."(留下".$comment->cnt."个脚印)' /></a></dd>";
+					$output .= $tmp;
+				}
+				echo $output ;
 			?>
 		</dl>
 	</div>
