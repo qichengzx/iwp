@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="page-404" class="sec-page">
+<section id="page-404" class="sec-page clearfix">
 	<div class="warp">
 		<div id="content">
 			<?php if(is_404()){?>

@@ -5,7 +5,7 @@
 ?>
 <?php get_header(); ?>
 
-<section id="page-template" class="sec-page">
+<section id="page-template" class="sec-page clearfix">
 	<div class="warp">
 		<div id="content">
 			<?php while ( have_posts() ) : the_post(); ?>

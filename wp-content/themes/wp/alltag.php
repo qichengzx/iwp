@@ -4,7 +4,7 @@ Template Name: 热门标签
 */
 ?>
 <?php get_header(); ?>
-<section id="page-tags" class="sec-page">
+<section id="page-tags" class="sec-page clearfix">
 	<div class="warp">
 		<div id="content">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

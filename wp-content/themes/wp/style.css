@@ -40,16 +40,6 @@ small{font-size:85%}
 strong{font-weight:bold}
 em{font-style:italic}
 cite{font-style:normal}
-.muted{color:#999999}
-a.muted:hover,a.muted:focus{color:#808080}
-.text-warning{color:#c09853}
-a.text-warning:hover,a.text-warning:focus{color:#a47e3c}
-.text-error{color:#d9534f}
-a.text-error:hover,a.text-error:focus{color:#c9302c}
-.text-info{color:#3a87ad}
-a.text-info:hover,a.text-info:focus{color:#2d6987}
-.text-success{color:#56af45}
-a.text-success:hover,a.text-success:focus{color:#448a37}
 .text-left{text-align:left}
 .text-right{text-align:right}
 .text-center{text-align:center}
@@ -121,12 +111,6 @@ section,
 .warp{width: 100%;float: left;}
 #content{margin-right: 330px;background-color: #fff;padding:10px 20px;}
 
-section:after,
-section:before,
-article.list:after,
-article.list:before{content: "";display: table;line-height: 0;}
-section:after,
-article.list:after{clear: both;}
 section{box-shadow:0 5px 20px #ccc;margin-bottom: 20px;}
 #page{background-color: #fff;height: 30px;text-align: center;line-height: 30px;}
 #page a,#page span{padding: 0 5px;}
