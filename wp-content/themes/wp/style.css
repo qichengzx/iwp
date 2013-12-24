@@ -89,7 +89,7 @@ a:hover{color:#D54E21;text-decoration:none;}
 #logo{display: inline-block;margin: 0;height: 50px;line-height: 50px;color: #EEEEEE}
 #logo a{color:#eee;}
 #logo a:hover{color:#fff;}
-#logo img{max-height: 50px;vertical-align: middle;}
+#logo img{max-height: 50px;vertical-align: top;}
 #head-nav .nav-menu,
 #head-nav>ul>li{float: left;}
 #head-nav li{display:block;height: 50px;line-height: 50px}
@@ -326,3 +326,15 @@ img.avatar-36{width: 36px;height: 36px;}
 /*搜索结果页面*/
 .search-list{min-height: 150px;}
 .entry-summary #searchform{margin-top: 15px;}
+
+
+/**/
+@media screen and ( max-width:850px){
+  #content{margin-right: 0}
+  #aside{display: none;}
+  #page-footer > div{max-width: 100%;padding: 0 20px;}
+}
+@media screen and ( max-width:610px){
+  header.a-header .info,
+  .head-tool{display: none;}
+}

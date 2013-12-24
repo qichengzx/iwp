@@ -50,6 +50,6 @@ if ( is_single() ){
 <meta name="description" content="<?php echo single_tag_title(); ?>" />
 <?php } ?>
 <?php if ( is_home() ) { ?>
-<meta name="description" content="<?php echo get_option('swt_description'); ?>" />
-<meta name="keywords" content="<?php echo get_option('swt_keywords'); ?>" />
+<meta name="description" content="<?php echo get_option('z_description'); ?>" />
+<meta name="keywords" content="<?php echo get_option('z_keywords'); ?>" />
 <?php } ?>
