@@ -36,7 +36,7 @@
 			<!-- <a href="<?php echo bloginfo('url'); ?>" title="首页">首页</a> -->
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu','container'=>'ul','container_id'=>'container1', 'menu_class' => 'nav-menu clearfix') ); ?>
 		</nav>
-		<div class="head-tool">
+		<div class="head-tool pull-right">
 			<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
 				<input id="searchsubmit" type="submit" value="搜索" class="button glow button-flat-primary pull-right"/>
 				<input type="text" name="s" id="search" placeholder="请输入搜索内容" class="swap_value form-control pull-right" x-webkit-speech/>

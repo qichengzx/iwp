@@ -72,6 +72,17 @@ array( "name" => $themename." Options",
             "std" => "显示",
             "options" => array("显示", "关闭")),
 
+    array( "type" => "close"),
+    array( "name" => "网站统计",
+           "type" => "section"),
+    array( "type" => "open"),
+
+    array(  "name" => "是否显示网站统计，文章，分类，标签等数量统计",
+            "desc" => "",
+            "id" => $shortname."_tj",
+            "type" => "select",
+            "std" => "显示",
+            "options" => array("显示", "关闭")),
   /*  
 
 //顶部热点文章设置开始

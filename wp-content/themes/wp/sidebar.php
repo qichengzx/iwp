@@ -26,7 +26,7 @@
 	<?php }?>
 	<div class="widget">
 		<?php wp_reset_query();if ( is_home()){ ?>
-		<?php if ( !function_exists('dynamic_sidebar') : ?>
+		<?php if ( !function_exists('dynamic_sidebar') ) : ?>
 		<?php endif; ?>
 		<?php } ?>
 	</div>
