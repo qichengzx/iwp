@@ -15,7 +15,7 @@
 <?php include('seo.php'); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/buttons.css">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/buttons.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <!--[if lt IE 9]>
 <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
@@ -26,14 +26,15 @@
 	<div class="clearfix">
 		<h1 id="logo" class="pull-left" rel="home">
 			<?php if(get_option("z_logo")){?>
-				<img src="<?php echo bloginfo('stylesheet_directory').'/'.get_option('z_logo') ?>" height="50"/>
-			<?php }else{?>
+				<a href="<?php echo bloginfo('url'); ?>" title="首页"><img src="<?php echo bloginfo('stylesheet_directory').'/'.get_option('z_logo') ?>" height="50"/></a>
+			<?php }else{ ?>
+				<a href="<?php echo bloginfo('url'); ?>" title="首页">
 			<?php bloginfo( 'name' ); ?>
+				</a>
 			<?php } ?>
 		</h1>
 		
 		<nav id="head-nav" class="pull-left" role="navigation">
-			<!-- <a href="<?php echo bloginfo('url'); ?>" title="首页">首页</a> -->
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu','container'=>'ul','container_id'=>'container1', 'menu_class' => 'nav-menu clearfix') ); ?>
 		</nav>
 		<div class="head-tool pull-right">

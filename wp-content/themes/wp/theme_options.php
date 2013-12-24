@@ -83,6 +83,17 @@ array( "name" => $themename." Options",
             "type" => "select",
             "std" => "显示",
             "options" => array("显示", "关闭")),
+
+    array( "type" => "close"),
+    array( "name" => "网站安装日期",
+           "type" => "section"),
+    array( "type" => "open"),
+
+    array(  "name" => "网站安装日期",
+            "desc" => "用于底部显示网站运行时间，格式（2013-05-06），当前日期为".date("Y-m-d",time()),
+            "id" => $shortname."_time",
+            "type" => "text",
+            "std" => ""),
   /*  
 
 //顶部热点文章设置开始

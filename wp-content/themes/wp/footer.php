@@ -16,7 +16,9 @@
 			分类：<?php echo $count_categories = wp_count_terms('category'); ?>个&nbsp;&nbsp;
 			标签：<?php echo $count_tags = wp_count_terms('post_tag'); ?>个&nbsp;&nbsp;
 			链接：<?php $link = $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->links WHERE link_visible = 'Y'"); echo $link; ?>个&nbsp;&nbsp;
-			网站运行：<?php echo floor((time()-strtotime(get_option('swt_builddate')))/86400); ?>天&nbsp;&nbsp;
+			<?php if(get_option('z_time')){?>
+			网站运行：<?php echo floor((time()-strtotime(get_option('z_time')))/86400); ?>天&nbsp;&nbsp;
+			<?php }?>
 			最后更新：<?php $last = $wpdb->get_results("SELECT MAX(post_modified) AS MAX_m FROM $wpdb->posts WHERE (post_type = 'post' OR post_type = 'page') AND (post_status = 'publish' OR post_status = 'private')");$last = date('Y年n月j日', strtotime($last[0]->MAX_m));echo $last; ?>
 			<?php endif;?>
 			<p>代码如诗</p>
