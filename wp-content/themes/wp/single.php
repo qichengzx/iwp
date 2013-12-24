@@ -2,7 +2,7 @@
 <nav id="breadcrumb">
 	<?php seobreadcrumbs();?>
 </nav>
-<section id="page-single">
+<section id="page-single" class="clearfix">
 	<div class="warp">
 		<div id="content" class="article-content">
 			<?php while ( have_posts() ) : the_post(); ?>

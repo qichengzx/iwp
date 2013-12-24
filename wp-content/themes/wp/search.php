@@ -7,7 +7,7 @@
 <nav id="breadcrumb">
 	<?php seobreadcrumbs();?>
 </nav>
-<section id="page-search">
+<section id="page-search" class="clearfix">
 	<div class="warp">
 		<div id="content">
 		<?php if ( have_posts() ) : ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="page-index">
+<section id="page-index" class="clearfix">
 	<div class="warp">
 		<div id="content">
 			<?php
