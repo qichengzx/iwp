@@ -24,6 +24,13 @@
 		</dl>
 	</div>
 	<?php }?>
+	<div class="widget">
+		<?php wp_reset_query();if ( is_home()){ ?>
+		<?php if ( !function_exists('dynamic_sidebar') : ?>
+		<?php endif; ?>
+		<?php } ?>
+	</div>
+	
 	<!--标签云-->
 	<div class="widget tags">
 		<h4><span>标签云</span></h4>

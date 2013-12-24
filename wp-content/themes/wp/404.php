@@ -1,6 +1,6 @@
-<? get_header(); ?>
+<?php get_header(); ?>
 
-<section id="page-index">
+<section id="page-404" class="sec-page">
 	<div class="warp">
 		<div id="content">
 			<?php if(is_404()){?>
@@ -11,4 +11,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 </section>
-<? get_footer(); ?>
+<?php get_footer(); ?>

@@ -16,4 +16,3 @@
 		<?php endif;?>
 	</div><!-- .entry-summary -->
 </article>
-		

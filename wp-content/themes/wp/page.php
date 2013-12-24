@@ -3,9 +3,9 @@
 * The template for displaying all pages
 */
 ?>
-<? get_header(); ?>
+<?php get_header(); ?>
 
-<section id="page-index">
+<section id="page-template" class="sec-page">
 	<div class="warp">
 		<div id="content">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -35,4 +35,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 </section>
-<? get_footer(); ?>
+<?php get_footer(); ?>

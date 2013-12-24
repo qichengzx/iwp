@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="page-index">
+<section id="page-archive" class="sec-page">
 	<div class="warp">
 		<div id="content">
 			<?php if (have_posts()) : ?> <h2 class="Archives-nav">

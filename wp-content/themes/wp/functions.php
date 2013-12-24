@@ -13,7 +13,6 @@ register_nav_menus(
          'footer-menu' => __( '页角自定义菜单' )
     )
 );
-
 if ( ! function_exists( 'entry_cate' ) ) :
 /**
  * 获取分类名
@@ -93,31 +92,31 @@ function entry_tags(){
 }
 
 endif;
-if ( ! function_exists( 'twentythirteen_entry_meta' ) ) :
+if ( ! function_exists( 'wp_entry_meta' ) ) :
 /**
  * Print HTML with meta information for current post: categories, tags, permalink, author, and date.
  *
- * Create your own twentythirteen_entry_meta() to override in a child theme.
+ * Create your own wp_entry_meta() to override in a child theme.
  *
  * @since Twenty Thirteen 1.0
  *
  * @return void
  */
-function twentythirteen_entry_meta() {
+function wp_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() )
-		echo '<span class="featured-post">' . __( 'Sticky', 'twentythirteen' ) . '</span>';
+		echo '<span class="featured-post">' . __( 'Sticky', 'wp' ) . '</span>';
 
 	if ( ! has_post_format( 'link' ) && 'post' == get_post_type() )
-		twentythirteen_entry_date();
+		wp_entry_date();
 
 	// Translators: used between list items, there is a space after the comma.
-	$categories_list = get_the_category_list( __( ', ', 'twentythirteen' ) );
+	$categories_list = get_the_category_list( __( ', ', 'wp' ) );
 	if ( $categories_list ) {
 		echo '<span class="categories-links">' . $categories_list . '</span>';
 	}
 
 	// Translators: used between list items, there is a space after the comma.
-	$tag_list = get_the_tag_list( '', __( ', ', 'twentythirteen' ) );
+	$tag_list = get_the_tag_list( '', __( ', ', 'wp' ) );
 	if ( $tag_list ) {
 		echo '<span class="tags-links">' . $tag_list . '</span>';
 	}
@@ -126,7 +125,7 @@ function twentythirteen_entry_meta() {
 	if ( 'post' == get_post_type() ) {
 		printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_attr( sprintf( __( 'View all posts by %s', 'twentythirteen' ), get_the_author() ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'wp' ), get_the_author() ) ),
 			get_the_author()
 		);
 	}

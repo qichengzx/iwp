@@ -99,16 +99,18 @@ a:hover{color:#D54E21;text-decoration:none;}
 #logo{display: inline-block;margin: 0;height: 50px;}
 #logo img{max-height: 50px;}
 #head-nav .nav-menu{float: left;}
-#head-nav li{display:block;float: left;height: 50px;line-height: 50px}
+#head-nav>ul>li{float: left;}
+#head-nav li{display:block;height: 50px;line-height: 50px}
 .menu-item-has-children{position: relative;}
-.menu-item-has-children .sub-menu{position: absolute;top: 50px;left: 0;z-index: 2;background-color: #4A4A4A;}
+.menu-item-has-children .sub-menu{display:none;position: absolute;top: 50px;left: 0;z-index: 2;background-color: #4A4A4A;}
 .menu-item-has-children li{}
-#head-nav a{ display: block;padding: 0 20px; color: #EEE;font-weight: 600;float: left;}
+#head-nav a{display: block;padding: 0 20px; color: #EEE;font-weight: 600;}
 #head-nav a:hover,
 #head-nav li.current-menu-item a{background-color: #404040;color: #fff}
 .head-tool{float: right;width: 300px;height: 34px;margin-top: 8px;}
 #search{width: 130px;margin-right: 6px;}
-#page-index{margin-top: 83px;}
+#page-index,
+.sec-page{margin-top: 83px;}
 .header>div,
 .container,
 section,
@@ -197,7 +199,9 @@ img.avatar-36{width: 36px;height: 36px;}
 .comment-body .reply{font-size: 12px;line-height: 1.7em;}
 .comment-body p{padding-left: 46px;}
 .form-allowed-tags{margin-bottom: 5px;}
-#submit,.post-password-form input[type="submit"]{
+#submit,
+.post-password-form input[type="submit"],
+#searchsubmit{
 	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
@@ -291,12 +295,18 @@ img.avatar-36{width: 36px;height: 36px;}
 	.comments-list img.avatar{margin-right: 10px;}
 	.comments-list li ul{margin-left: 46px;padding-top: 10px;}
 	.comments-list li ul li:last-child{border-bottom: none;}
-/*密码保护文章*/
+/*密码保护文章和搜索的表单*/
+.searchform input[type="text"],
 .post-password-form input[type="password"]{height:34px;padding:6px 12px;font-size:14px;line-height:1.428571429;color:#555555;vertical-align:middle;background-color:#ffffff;background-image:none;border:1px solid #cccccc;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);-webkit-transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+.searchform input[type="text"],
 .post-password-form input[type="password"]:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);}
+.searchform input[type="text"],
 .post-password-form input[type="password"]:-moz-placeholder{color:#999999;}
+.searchform input[type="text"],
 .post-password-form input[type="password"]::-moz-placeholder{color:#999999;opacity:1;}
+.searchform input[type="text"],
 .post-password-form input[type="password"]:-ms-input-placeholder{color:#999999;}
+.searchform input[type="text"],
 .post-password-form input[type="password"]::-webkit-input-placeholder{color:#999999;}
 
 /**********************
@@ -327,3 +337,6 @@ img.avatar-36{width: 36px;height: 36px;}
 /*百度分享*/
 #bdshare_weixin_qrcode_dialog_bg{z-index: 1}
 #bdshare_weixin_qrcode_dialog{z-index: 2;height: auto!important}
+/*搜索结果页面*/
+.search-list{min-height: 150px;}
+.entry-summary #searchform{margin-top: 15px;}

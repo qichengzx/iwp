@@ -20,6 +20,11 @@
 <script>
 $(function(){
 	$('.readers a').tooltip();
+	$('#head-nav>ul>li').hover(function(){
+		$(this).children('ul').show();
+	},function(){
+		$(this).children('ul').hide();
+	})
 })	
 </script>
 </body>
