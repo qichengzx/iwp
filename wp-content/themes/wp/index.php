@@ -3,24 +3,22 @@
 <section id="page-index" class="clearfix">
 	<div class="warp">
 		<div id="content">
-			<?php
-				$args = array(
-					'posts_per_page' => 5,
-					'post__in'  => get_option('sticky_posts'),
-					'caller_get_posts' => 10
-				);
-				query_posts($args);
-			?>
-			<?php
-				$fmimg = get_post_meta($post->ID, "fmimg_value", true);
-				$cti = catch_that_image();
-				if($fmimg) {
-					$showimg = $fmimg;
-				} else {
-					$showimg = $cti;
-				};
-			?>
-			<?php if (have_posts()) : ?>
+<?php
+	if(!is_mobile() ):
+		$args = array(
+			'posts_per_page' => 5,
+			'post__in'  => get_option('sticky_posts'),
+			'caller_get_posts' => 10
+		);
+		query_posts($args);
+		$fmimg = get_post_meta($post->ID, "fmimg_value", true);
+		$cti = catch_that_image();
+		if($fmimg) {
+			$showimg = $fmimg;
+		} else {
+			$showimg = $cti;
+		};
+		if (have_posts()) : ?>
 			<h2>本站推荐</h2>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -50,11 +48,10 @@
 					<?php endwhile; ?>
 				</div>
 			</div>
-			<?php endif; ?>	
-			<?php wp_reset_query();if(have_posts()) : ?>
+<?php endif; endif; 
+				wp_reset_query();if(have_posts()) : ?>
 				<h2>最新文章</h2>
 				<?php while ( have_posts() ) : the_post(); ?>
-				<?php echo get_post_format();?>
 				<?php get_template_part( 'loop', get_post_format() ); ?>
 				<?php endwhile; ?>
 			<?php endif; ?>

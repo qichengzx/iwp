@@ -1,18 +1,11 @@
 ﻿/*  
 
 Theme Name: 新
-
 Theme URI: http://www.qichengzx.com;
-
 Description: 测试作品
-
 Version: 1.0
-
 Author: 启程
-
 Author URI: http://www.qichengzx.com;
-
-
 */
 html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 a:focus,a:hover,a:active{outline:none}
@@ -327,14 +320,14 @@ img.avatar-36{width: 36px;height: 36px;}
 .search-list{min-height: 150px;}
 .entry-summary #searchform{margin-top: 15px;}
 
-
-/**/
 @media screen and ( max-width:850px){
   #content{margin-right: 0}
   #aside{display: none;}
   #page-footer > div{max-width: 100%;padding: 0 20px;}
 }
 @media screen and ( max-width:610px){
+  #head-nav a{padding: 0 5px}
   header.a-header .info,
   .head-tool{display: none;}
+  article .thumb{float: none;height:auto;max-height: 150px;}
 }
