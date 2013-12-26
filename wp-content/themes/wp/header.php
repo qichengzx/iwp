@@ -11,13 +11,15 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="author" content="启程">
 <meta name="application-name" content="qicheng.me">
 <?php include('seo.php'); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css">
+<?php if(!is_mobile()):?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/buttons.min.css">
+<?php endif?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 <!--[if lt IE 9]>
 <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
