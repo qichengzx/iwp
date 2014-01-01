@@ -7,7 +7,7 @@ Template Name: 文章归档
 <nav id="breadcrumb">
 	<?php seobreadcrumbs();?>
 </nav>
-<section id="page-archives" class="sec-page clearfix">
+<section id="page-archives" class="clearfix">
 	<div class="warp clearfix">
 		<div id="content" class="c-archives">
 			<h2>文章存档</h2>
