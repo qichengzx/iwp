@@ -251,6 +251,7 @@ img.avatar-36{width: 36px;height: 36px;}
 .article-content{line-height: 25px;}
 .article-content .a-header{border-bottom: 1px solid #EEEEEE}
 .article-content .info a{color: #999999}
+.article-content .feedpin{font-size:13px;color: #999999;padding-left:5px;}
 .article-content .a-article,
 #article .a-footer{padding: 15px 0;}
 .article-content .a-article{word-break: break-all;word-wrap: break-word;}
