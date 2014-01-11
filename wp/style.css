@@ -257,7 +257,8 @@ img.avatar-36{width: 36px;height: 36px;}
 .article-content .a-article{word-break: break-all;word-wrap: break-word;}
 .article-content .a-article img{max-width: 830px!important;}
 .article-content .a-article ul{margin: 0 0 16px 26px;}
-.article-content .a-article>div>div{margin-bottom:1em;text-indent: 2em;}
+.article-content .a-article>div>div,
+.article-content .a-article>p{margin-bottom:1em;text-indent: 2em;}
 .article-content .a-articl .gallery{text-indent: 0}
 .article-content .a-footer{border-top: 1px solid #EEEEEE;}
 .article-content .a-footer a:hover{text-decoration: underline;}
