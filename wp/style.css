@@ -8,7 +8,7 @@ Author: 启程
 Author URI: http://www.qichengzx.com;
 */
 html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
-a:focus,a:hover,a:active{outline:none}
+a:focus,a:hover,a:active{outline:none;text-decoration: none;}
 sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}
 sup{top:-0.5em}
 sub{bottom:-0.25em}
@@ -334,3 +334,4 @@ img.avatar-36{width: 36px;height: 36px;}
   .head-tool{display: none;}
   article .thumb{float: none;height:auto;max-height: 150px;}
 }
+#gotop{display: block; position: fixed;top: auto; bottom:171px;right:0;height:40px;width:40px;color: #fff; text-align: center; line-height: 40px; background-color: #4A4A4A}

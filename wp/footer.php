@@ -25,12 +25,25 @@
 		</div>
 	</div>
 </footer>
+<a href="<?php echo bloginfo('url'); ?>" title="返回顶部" id="gotop" class="glyphicon glyphicon-arrow-up"></a>
 <?php if(!is_mobile()):?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write(unescape('%3Cscript src="http://jquery.com/jquery-wp-content/themes/jquery/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/bootstrap.min.js"></script>
 <script>
 $(function(){
+	$(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $("#gotop").fadeIn(1500);
+        }
+        else {
+            $("#gotop").fadeOut(1500);
+        }
+    });
+	$('#gotop').click(function(event) {
+		$('html').animate( {scrollTop: 0 }, 100);
+		return false;
+	});
 	$('.readers a').tooltip();
 	$('#head-nav>ul>li').hover(function(){
 		$(this).children('ul').show();
