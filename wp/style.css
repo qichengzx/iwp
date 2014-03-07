@@ -1,11 +1,11 @@
 ﻿/*  
-
-Theme Name: 新
-Theme URI: http://www.qichengzx.com;
-Description: 测试作品
-Version: 1.0
-Author: 启程
-Author URI: http://www.qichengzx.com;
+Theme Name	: 新
+Theme URI	: http://www.qichengzx.com;
+Description	: 测试作品
+Version		: 1.0.1
+Author		: 启程
+Last Time	：2014-03-07 23:39:12
+Author URI	: http://www.qichengzx.com;
 */
 html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 a:focus,a:hover,a:active{outline:none;text-decoration: none;}
@@ -55,14 +55,6 @@ ul.inline,ol.inline{margin-left:0;list-style:none}
 ul.inline > li,ol.inline > li{display:inline-block;*display:inline;*zoom:1;padding-left:5px;padding-right:5px}
 dl,dd{margin:0;line-height:20px}
 hr{margin:20px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff}
-blockquote{padding:0 0 0 15px;margin:0 0 20px;border-left:5px solid #eeeeee}
-blockquote p{margin-bottom:0;font-size:15px;font-weight:300;line-height:1.25}
-blockquote small{display:block;line-height:20px;color:#999999}
-blockquote small:before{content:'\2014 \00A0'}
-blockquote.pull-right{float:right;padding-right:15px;padding-left:0;border-right:5px solid #eeeeee;border-left:0}
-blockquote.pull-right p,blockquote.pull-right small{text-align:right}
-blockquote.pull-right small:before{content:''}
-blockquote.pull-right small:after{content:'\00A0 \2014'}
 q:before,q:after,blockquote:before,blockquote:after{content:""}
 code,pre{padding:0 3px 2px;font-family:"Open Sans",Helvetica,Arial,"Liberation Sans",sans-serif,Monaco,Menlo,Consolas,"Courier New",monospace;font-size:10px;color:#444444;border-radius:3px}
 code{padding:2px 4px;color:#d14;background-color:#fbfbfb;border:1px solid #e1e1e8;white-space:nowrap}
@@ -78,8 +70,9 @@ a{color:#428BD1;text-decoration:none;outline: none;transition: color 0.5s linear
 a:hover{color:#D54E21;text-decoration:none;}
 ::selection{background:#333333;color:#fff;text-shadow:none;text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);}
 ::-moz-selection{background:#333333;color:#fff;text-shadow:none;text-shadow:0 1px 1px rgba(0, 0, 0, 0.6);}
+
 .header{height: 50px;background-color: #4A4A4A;position: fixed;top: 0;left: 0;width: 100%;z-index: 5;}
-#logo{display: inline-block;margin: 0;height: 50px;line-height: 50px;color: #EEEEEE}
+#logo{display: inline-block;margin: 0;height: 50px;line-height: 50px;color: #EEEEEE;overflow: hidden;}
 #logo a{color:#eee;}
 #logo a:hover{color:#fff;}
 #logo img{max-height: 50px;vertical-align: top;}
@@ -333,5 +326,8 @@ img.avatar-36{width: 36px;height: 36px;}
   header.a-header .info,
   .head-tool{display: none;}
   article .thumb{float: none;height:auto;max-height: 150px;}
+}
+@media screen and ( max-width:420px){
+  #logo{display: none;}
 }
 #gotop{display: block; position: fixed;top: auto; bottom:171px;right:0;height:40px;width:40px;color: #fff; text-align: center; line-height: 40px; background-color: #4A4A4A}
