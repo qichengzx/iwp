@@ -476,4 +476,8 @@ function is_mobile() {
     }
     return $is_mobile;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 ?>

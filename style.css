@@ -87,7 +87,10 @@ a:hover{color:#D54E21;text-decoration:none;}
 #head-nav li.current-menu-item a{background-color: #404040;color: #fff}
 .head-tool{width: 300px;height: 34px;margin-top: 8px;}
 #search{width: 130px;margin-right: 6px;}
+<<<<<<< HEAD
+=======
 #search:focus{width: 200px;transition: width 0.3s ease 0s;}
+>>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 #page-index,
 .sec-page{margin-top: 83px;}
 .header>div,
@@ -249,7 +252,11 @@ img.avatar-36{width: 36px;height: 36px;}
 .article-content .a-article,
 #article .a-footer{padding: 15px 0;}
 .article-content .a-article{word-break: break-all;word-wrap: break-word;}
+<<<<<<< HEAD
+.article-content .a-article img{max-width: 830px!important;}
+=======
 .article-content .a-article img{max-width: 830px!important;margin-left: -2em;}
+>>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 .article-content .a-article ul{margin: 0 0 16px 26px;}
 .article-content .a-article>div>div,
 .article-content .a-article>p{margin-bottom:1em;text-indent: 2em;}

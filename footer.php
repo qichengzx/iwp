@@ -27,7 +27,11 @@
 </footer>
 <a href="<?php echo bloginfo('url'); ?>" title="返回顶部" id="gotop" class="glyphicon glyphicon-arrow-up"></a>
 <?php if(!is_mobile()):?>
+<<<<<<< HEAD
+<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>	
+=======
 <script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+>>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 <script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/bootstrap.min.js"></script>
 <script>
 $(function(){
@@ -53,4 +57,8 @@ $(function(){
 </script>
 <?php endif;?>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
