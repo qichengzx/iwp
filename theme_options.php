@@ -4,11 +4,8 @@ $shortname = "z";
 $categories = get_categories('hide_empty=0&orderby=name');
 $wp_cats = array();
 foreach ($categories as $category_list ) {
-<<<<<<< HEAD
     $wp_cats[$category_list->cat_ID] = $category_list->cat_name;
-=======
        $wp_cats[$category_list->cat_ID] = $category_list->cat_name;
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 }
 
 $options = array ( 
@@ -69,11 +66,7 @@ array( "name" => $themename." Options",
     array( "type" => "close"),
     array( "name" => "活跃读者",
            "type" => "section"),
-<<<<<<< HEAD
     array(  "name" => "是否显示活跃读者",
-=======
-     array(  "name" => "是否显示活跃读者",
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
             "desc" => "",
             "id" => $shortname."_hotreader",
             "type" => "select",
@@ -167,7 +160,6 @@ array( "name" => $themename." Options",
 
 function mytheme_add_admin() {
 
-<<<<<<< HEAD
     global $themename, $shortname, $options;
 
     if ( $_GET['page'] == basename(__FILE__) ) {
@@ -288,7 +280,6 @@ function mytheme_admin() {
 }
 ?>
 <?php
-=======
 global $themename, $shortname, $options;
 
 if ( $_GET['page'] == basename(__FILE__) ) {
@@ -423,7 +414,7 @@ $i++;
 ?>
 
 <div class="rm_section">
-<div class="rm_title"><h3><img src="<?php bloginfo('template_directory')?>/includes/options/clear.png" class="inactive" alt="""><?php echo $value['name']; ?></h3><span class="submit"><input name="save<?php echo $i; ?>" type="submit" value="保存设置" />
+<div class="rm_title"><h3><img src="<?php bloginfo('template_directory')?>/includes/options/clear.png" class="inactive" alt=""><?php echo $value['name']; ?></h3><span class="submit"><input name="save<?php echo $i; ?>" type="submit" value="保存设置" />
 </span><div class="clearfix"></div></div>
 <div class="rm_options">
 
@@ -434,7 +425,6 @@ $i++;
 }
 ?>
  <?php
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 function show_id() {
     global $wpdb;
     $request = "SELECT $wpdb->terms.term_id, name FROM $wpdb->terms ";
@@ -448,7 +438,6 @@ function show_id() {
     }
 }
 ?>
-<<<<<<< HEAD
 <!-- <span class="show_id"><h4>站点所有分类ID</h4><?php show_id();?></span> -->
 <input type="hidden" name="action" value="save" />
 </form>
@@ -460,7 +449,6 @@ function show_id() {
 </form>
 <p>提示：此按钮将恢复主题初始状态，您的所有设置将消失！</p>
 </div>
-=======
  <span class="show_id"><h4>站点所有分类ID</h4><?php show_id();?></span>
 <input type="hidden" name="action" value="save" />
 </form>
@@ -472,7 +460,6 @@ function show_id() {
 </form>
 <p>提示：此按钮将恢复主题初始状态，您的所有设置将消失！</p>
  </div>
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 <?php
 }
 ?>
