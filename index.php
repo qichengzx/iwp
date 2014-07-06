@@ -3,9 +3,6 @@
 <section id="page-index" class="clearfix">
 	<div class="warp">
 		<div id="content">
-<<<<<<< HEAD
-		<?php wp_reset_query();if(have_posts()) : ?>
-=======
 <?php
 	if(!is_mobile() ):
 		$args = array(
@@ -53,7 +50,6 @@
 			</div>
 <?php endif; endif; 
 				wp_reset_query();if(have_posts()) : ?>
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
 				<h2>最新文章</h2>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'loop', get_post_format() ); ?>

@@ -27,12 +27,8 @@
 </footer>
 <a href="<?php echo bloginfo('url'); ?>" title="返回顶部" id="gotop" class="glyphicon glyphicon-arrow-up"></a>
 <?php if(!is_mobile()):?>
-<<<<<<< HEAD
-<script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>	
-=======
 <script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/bootstrap.min.js"></script>
+<script src="//libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script>
 $(function(){
 	$(window).scroll(function () {
@@ -56,9 +52,9 @@ $(function(){
 })	
 </script>
 <?php endif;?>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8d5851ee23fa3628c86ca3b12cb81099' type='text/javascript'%3E%3C/script%3E"));
+</script>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 104c10c21949b4d501a242e474a07ba5298952a7
