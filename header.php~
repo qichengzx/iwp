@@ -1,6 +1,8 @@
 <?php
  /*
  *
+ * @package WordPress
+ * @subpackage Wp
  * @since Wp 1.0
  */
 ?>

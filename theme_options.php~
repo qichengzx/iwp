@@ -269,7 +269,7 @@ function mytheme_admin() {
 ?>
 <div class="rm_section">
     <div class="rm_title clearfix">
-        <h3><?php echo $value['name']; ?></h3>
+        <h3><img src="<?php bloginfo('template_directory')?>/includes/options/clear.png" class="inactive" alt=""><?php echo $value['name']; ?></h3>
     </div>
     <div class="rm_options">
         <span class="submit"><input name="save<?php echo $i; ?>" type="submit" class="btn" value="保存设置" /></span>

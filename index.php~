@@ -5,7 +5,7 @@
 		<?php
 			if(!is_mobile() ):
 				wp_reset_query();if(have_posts()) : ?>
-				<h2 class="page_nav_title">最新文章</h2>
+				<h2 class="page_nav">最新文章</h2>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'loop', get_post_format() ); ?>
 				<?php endwhile; ?>

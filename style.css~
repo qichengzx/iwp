@@ -99,7 +99,7 @@ section,
 #breadcrumb li{float: left;}
 .warp{width: 100%;float: left;}
 #page-index #content,
-#page-archive #content{padding:10px 20px 10px 0;}
+#page-archive{padding:10px 20px 10px 0;}
 #content{margin-right: 330px;background-color: #fff;padding:10px 20px;}
 
 section{box-shadow:0 5px 20px #ccc;margin-bottom: 20px;}

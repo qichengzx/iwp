@@ -1,4 +1,4 @@
-<?c get_header(); ?>
+<?php get_header(); ?>
 
 <section id="page-archive" class="sec-page clearfix">
 	<div class="warp">
@@ -24,4 +24,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 </section>
-<?php get_footer(); ?>
+<? get_footer(); ?>
