@@ -1,6 +1,6 @@
 <footer class="footer" id="page-footer">
 	<div>
-		<?php wp_reset_query(); if ( is_home() && !is_mobile() ) { ?>
+		<?php wp_reset_query(); if ( is_home() && !wp_is_mobile() ) { ?>
 			<ul>
 				<?php wp_list_bookmarks('title_li=&categorize=1&category=&orderby=id&show_images='); ?>
 			</ul><!--//友情链接-->
@@ -10,7 +10,7 @@
 			&nbsp;&nbsp;Theme by <a target="_blank" href="http://www.qicheng.me">启程</a>
 			<?php echo stripslashes(get_option('swt_track_code')); ?>
 			Proudly powered by <a target="_blank" href="http://wordpress.org">WordPress</a></p>
-			<?php if(get_option("z_tj")=="显示" && !is_mobile()):?>
+			<?php if(get_option("z_tj")=="显示" && !wp_is_mobile()):?>
 			<p>日志：<?php $count_posts = wp_count_posts(); echo $published_posts = $count_posts->publish;?>篇 &nbsp;&nbsp;
 			评论：<?php echo $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->comments");?>条&nbsp;&nbsp;
 			分类：<?php echo $count_categories = wp_count_terms('category'); ?>个&nbsp;&nbsp;
@@ -26,7 +26,7 @@
 	</div>
 </footer>
 <a href="<?php echo bloginfo('url'); ?>" title="返回顶部" id="gotop" class="glyphicon glyphicon-arrow-up"></a>
-<?php if(!is_mobile()):?>
+<?php if(!wp_is_mobile()):?>
 <script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 <script src="//libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script>

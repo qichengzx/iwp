@@ -3,7 +3,7 @@
 	<div class="warp">
 		<div id="content">
 		<?php
-			if(!is_mobile() ):
+			if(!wp_is_mobile() ):
 				wp_reset_query();if(have_posts()) : ?>
 				<h2 class="page_nav_title">最新文章</h2>
 				<?php while ( have_posts() ) : the_post(); ?>

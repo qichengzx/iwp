@@ -14,7 +14,7 @@
 <meta name="application-name" content="qicheng.me">
 <?php include('seo.php'); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css">
-<?php if(!is_mobile()):?>
+<?php if(!wp_is_mobile()):?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/buttons.min.css">
 <?php endif?>
